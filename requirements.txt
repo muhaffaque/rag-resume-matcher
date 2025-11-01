@@ -1,2 +1,8 @@
 ipykernel
 PyPDF2
+python-dotenv
+langchain
+langchain-community
+huggingface-hub
+sentence-transformers
+faiss-cpu
