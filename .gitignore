@@ -1,2 +1,8 @@
 env
 .env
+
+src/*
+!src/config/
+
+app.py
+logs
