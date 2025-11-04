@@ -4,6 +4,8 @@ env
 src/*
 !src/config/
 !src/utils/
+!src/data_ingestion.py
+
 
 app.py
 logs
