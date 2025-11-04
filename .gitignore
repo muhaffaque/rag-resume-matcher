@@ -3,6 +3,7 @@ env
 
 src/*
 !src/config/
+!src/utils/
 
 app.py
 logs
