@@ -4,4 +4,3 @@ load_dotenv()
 
 GROQ_API_KEY = os.get_env("GROQ_API_KEY")
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-FAISS_DIR = "vectorstore"

@@ -6,7 +6,7 @@ from src.utils.exception import CustomException
 
 logger = get_logger(__name__)
 
-def read_file(file):
+def read_file(file):  
     try:
         text = ""
         if hasattr(file, "read"):  #if uploaded through sreamlit
