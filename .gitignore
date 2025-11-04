@@ -1,12 +1,5 @@
 env
 .env
 
-src/*
-!src/config/
-!src/utils/
-!src/data_ingestion.py
-!src/embedding.py
-
-
 app.py
 logs

@@ -24,7 +24,7 @@ def build_vectorstore(texts, metadata):
         logger.info("✅ FAISS index built successfully")
         return vectorstore 
     
-    except Exceptionas e:
+    except Exception as e:
         logger.error(f"❌ Error building vectorstore: {e}") 
         raise CustomException(e, sys)
 
