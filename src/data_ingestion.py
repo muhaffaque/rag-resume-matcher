@@ -27,5 +27,5 @@ def read_file(file):
 
     except Exception as e:
         logger.error(f"❌ Error reading PDF {getattr(file, 'name', file)}: {e}")
-        raise CustomException(e, sys)
+        raise CustomException(e)
 
