@@ -1,7 +1,7 @@
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from src.helper.name_clean import clean_output
+from src.helper.name_clean import clean_output 
 from src.utils.logger import get_logger
 from src.embedding import build_vectorstore
 from src.data_ingestion import read_file
@@ -11,7 +11,7 @@ import os
 
 logger = get_logger(__name__)
 
-def retrieve_top_resumes(jd_text, uploaded_files, k=3):
+def retrieve_top_resumes(jd_text, uploaded_files, k_value):
     resumes_texts, metadata = [], []
     for file in uploaded_files:
         text = read_file(file)
@@ -41,7 +41,7 @@ def retrieve_top_resumes(jd_text, uploaded_files, k=3):
     extract_name_chain = prompt | llm | StrOutputParser()
 
     #Now retrieve with scores
-    results = vectorstore.similarity_search_with_score(jd_text, k=k)
+    results = vectorstore.similarity_search_with_score(jd_text, k=k_value)
 
     output = []
     for doc, score in results:
