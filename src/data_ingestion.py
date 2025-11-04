@@ -1,6 +1,6 @@
 import sys
 from PyPDF2 import PdfReader
-from Pathlib import Path
+from pathlib import Path
 from src.utils.logger import get_logger
 from src.utils.exception import CustomException
 

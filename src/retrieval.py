@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 from src.helper.name_clean import clean_output
 from src.utils.logger import get_logger
 from src.embedding import build_vectorstore
-from src.data_ingestion import read_pdf
+from src.data_ingestion import read_file
 from src.config.config import GROQ_API_KEY
 from dotenv import load_dotenv
 import os
@@ -14,7 +14,7 @@ logger = get_logger(__name__)
 def retrieve_top_resumes(jd_text, uploaded_files, k=3):
     resumes_texts, metadata = [], []
     for file in uploaded_files:
-        text = read_pdf(file)
+        text = read_file(file)
         resumes_texts.append(text)
         metadata.append({"file_name": file.name})
     
@@ -40,7 +40,7 @@ def retrieve_top_resumes(jd_text, uploaded_files, k=3):
 
     extract_name_chain = prompt | llm | StrOutputParser()
 
-    # ✅ Now retrieve with scores
+    #Now retrieve with scores
     results = vectorstore.similarity_search_with_score(jd_text, k=k)
 
     output = []
