@@ -3,5 +3,3 @@ env
 
 app.py
 logs
-__pycache__/
-*.pyc
