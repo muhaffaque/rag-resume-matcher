@@ -1,7 +1,7 @@
 
 # 🧠 Resume Selector — RAG Application  
 
-###🚀 Features
+### 🚀 Features
 
 An **AI-powered Resume Shortlisting System** built using **Retrieval-Augmented Generation (RAG)** to match **resumes** against **job descriptions** semantically.  
 This project helps recruiters or HR professionals automatically identify the **top-matching resumes** from a pool of candidates using **LangChain**, **FAISS**, **HuggingFace embeddings**, and **Groq LLM**.
