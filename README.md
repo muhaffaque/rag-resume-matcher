@@ -1,4 +1,4 @@
-🚀 Features
+###🚀 Features
 
 🔍 Semantic Matching — Finds resumes most relevant to a given job description using sentence embeddings.
 
