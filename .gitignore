@@ -3,3 +3,4 @@ env
 
 app.py
 logs
+__pycache__
