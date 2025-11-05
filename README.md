@@ -41,9 +41,9 @@ project_root/
 └── data/  
     ├── resumes/             # Input PDF resumes  
     └── job_descriptions/    # Sample JD text  
+```
 
-
-⚙️ Installation
+## ⚙️ Installation
 
 1. Clone the Repository
 git clone https://github.com/<your-username>/resume-selector-rag.git
@@ -52,7 +52,7 @@ cd resume-selector-rag
 2. Create and Activate Virtual Environment
 python -m venv env
 env\Scripts\activate     # On Windows
-# or
+or
 source env/bin/activate  # On macOS/Linux
 
 3. Install Dependencies
@@ -67,7 +67,6 @@ GROQ_API_KEY=your_api_key_here
 
 Run the Streamlit App
 streamlit run app.py
-
 
 In the Browser UI:
 Paste the Job Description in the text box.
